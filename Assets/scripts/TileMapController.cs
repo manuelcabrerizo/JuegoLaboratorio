@@ -13,7 +13,7 @@ public class TileMapController : MonoBehaviour
     private List<GameObject> tileMap = new List<GameObject>();
     private float tileScale = 2.4f;
 
-    private int[,] map = new int[20, 20]
+    private int[,] map = new int[20, 80]
     {
         { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
         { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -57,7 +57,7 @@ public class TileMapController : MonoBehaviour
 
         for (int y = 0; y < 20; y++) 
         {
-            for (int x = 0; x < 20; x++)
+            for (int x = 0; x < 80; x++)
             {
                 if(map[(int)y, (int)x] == 1)
                     tileMap.Add(Instantiate(tile , new Vector3(offsetX - 10, -offsetY + 11, 0), Quaternion.identity));
