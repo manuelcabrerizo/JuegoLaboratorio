@@ -37,7 +37,7 @@ public class FireballController : MonoBehaviour
 
         distanciaRecorida += Math.Abs(transform.position.x - lastPositionX);
 
-        if(distanciaRecorida > 10)
+        if(distanciaRecorida > 5)
         {
             Destroy(gameObject);
         }
